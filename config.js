@@ -71,6 +71,7 @@ features: [
     "screenshots/screen3.png",
     "screenshots/screen4.png",
     "screenshots/screen5.png",
+    "screenshots/screen6.png",
   ],
 
   // ── BADGE HERO ───────────────────────────────────────────
