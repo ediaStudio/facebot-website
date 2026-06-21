@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title id="page-title">FaceBot</title>
+  <link href="assets/icon.webp" rel="icon" type="image/png"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap" rel="stylesheet"/>
   <script src="config.js"></script>
   <style>
@@ -397,20 +398,11 @@
     .store-btn {
       display: inline-flex;
       align-items: center;
-      gap: 12px;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 14px 24px;
       text-decoration: none;
-      color: var(--text);
-      transition: all 0.2s;
+      transition: transform 0.2s;
     }
-    .store-btn:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); transform: translateY(-2px); }
-    .store-btn-icon { font-size: 1.8rem; }
-    .store-btn-text { text-align: left; }
-    .store-btn-text span   { display: block; font-size: 0.7rem; color: var(--muted); font-weight: 400; }
-    .store-btn-text strong { font-size: 1rem; font-weight: 600; }
+    .store-btn:hover { transform: translateY(-2px); }
+    .store-btn img { height: 52px; width: auto; display: block; }
 
     /* ─── FOOTER ─── */
     footer {
@@ -513,18 +505,10 @@
         <p id="download-sub"></p>
         <div class="store-buttons">
           <a id="appstore-btn" href="#" class="store-btn">
-            <span class="store-btn-icon">🍎</span>
-            <div class="store-btn-text">
-              <span>Download on the</span>
-              <strong>App Store</strong>
-            </div>
+            <img src="assets/appstore.png" alt="Download on the App Store" />
           </a>
           <a id="playstore-btn" href="#" class="store-btn">
-            <span class="store-btn-icon">▶</span>
-            <div class="store-btn-text">
-              <span>Get it on</span>
-              <strong>Google Play</strong>
-            </div>
+            <img src="assets/playstore.png" alt="Get it on Google Play" />
           </a>
         </div>
       </div>
