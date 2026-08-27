@@ -3,7 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title id="page-title">FaceBot</title>
+  <title>FaceBot: AI Photo and Video Transformations</title>
+  <meta name="description" content="Create viral AI photos and videos in seconds with FaceBot. Generate cinematic selfies, AI videos, headshots, age predictions, styles, and more."/>
+  <link rel="canonical" href="https://facebot.dhastudio.xyz/"/>
+  <meta name="robots" content="index, follow"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="FaceBot"/>
+  <meta property="og:title" content="FaceBot: AI Photo and Video Transformations"/>
+  <meta property="og:description" content="Create viral AI photos and videos in seconds with FaceBot. Generate cinematic selfies, AI videos, headshots, age predictions, styles, and more."/>
+  <meta property="og:url" content="https://facebot.dhastudio.xyz/"/>
+  <meta property="og:image" content="https://facebot.dhastudio.xyz/assets/icon.webp"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="FaceBot: AI Photo and Video Transformations"/>
+  <meta name="twitter:description" content="Create viral AI photos and videos in seconds with FaceBot. AI videos, age filter, selfie styles and more."/>
+  <meta name="twitter:image" content="https://facebot.dhastudio.xyz/assets/icon.webp"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "FaceBot",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "iOS, Android",
+    "description": "Create viral AI photos and videos in seconds with FaceBot. Generate cinematic selfies, AI videos, headshots, age predictions, styles, and more.",
+    "url": "https://facebot.dhastudio.xyz/",
+    "image": "https://facebot.dhastudio.xyz/assets/icon.webp",
+    "offers": [
+      {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "name": "Free with in-app purchases"
+      }
+    ]
+  }
+  </script>
   <link href="assets/icon.webp" rel="icon" type="image/png"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap" rel="stylesheet"/>
   <script src="config.js"></script>
@@ -447,6 +480,7 @@
       <li><a href="#features">Features</a></li>
       <li><a href="#screenshots">Screenshots</a></li>
       <li><a href="#download">Download</a></li>
+      <li><a href="blog.html">Blog</a></li>
     </ul>
   </nav>
 
@@ -519,6 +553,7 @@
   <footer>
     <p id="footer-copy"></p>
     <div class="footer-links">
+      <a href="/blog.html">Blog</a>
       <a href="/privacy-policy.html">Privacy Policy</a>
       <a href="/terms.html">Terms of Use</a>
       <a id="footer-email" href="#">Contact</a>
@@ -534,7 +569,7 @@
     r.setProperty('--surface', APP_CONFIG.colors.surface);
 
     // ── General ──
-    document.title = APP_CONFIG.appName;
+    document.title = `${APP_CONFIG.appName}: AI Photo and Video Transformations`;
     document.getElementById('nav-appname').textContent    = APP_CONFIG.appName;
     document.getElementById('hero-badge').textContent     = APP_CONFIG.heroBadge;
     document.getElementById('hero-desc').textContent      = APP_CONFIG.description;

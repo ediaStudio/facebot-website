@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The AI Age Filter: How It Works and How to Use It | FaceBot</title>
+  <meta name="description" content="How does the AI age filter work? FaceBot ages and de-ages faces in seconds. Learn how to get realistic results and fun ideas to try."/>
+  <link rel="canonical" href="https://facebot.dhastudio.xyz/blog/ai-age-filter-how-it-works.html"/>
+  <meta name="robots" content="index, follow"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:site_name" content="FaceBot"/>
+  <meta property="og:title" content="The AI Age Filter: How It Works and How to Use It"/>
+  <meta property="og:description" content="How does the AI age filter work? FaceBot ages and de-ages faces in seconds. Learn how to get realistic results and fun ideas to try."/>
+  <meta property="og:url" content="https://facebot.dhastudio.xyz/blog/ai-age-filter-how-it-works.html"/>
+  <meta property="og:image" content="https://facebot.dhastudio.xyz/screenshots/screen2.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="The AI Age Filter: How It Works and How to Use It"/>
+  <meta name="twitter:description" content="How does the AI age filter work? FaceBot ages and de-ages faces in seconds."/>
+  <meta name="twitter:image" content="https://facebot.dhastudio.xyz/screenshots/screen2.png"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "The AI Age Filter: How It Works and How to Use It",
+    "description": "How does the AI age filter work? FaceBot ages and de-ages faces in seconds. Learn how to get realistic results and fun ideas to try.",
+    "image": "https://facebot.dhastudio.xyz/screenshots/screen2.png",
+    "datePublished": "2026-08-25",
+    "dateModified": "2026-08-25",
+    "author": { "@type": "Organization", "name": "FaceBot Team" },
+    "publisher": { "@type": "Organization", "name": "FaceBot", "logo": { "@type": "ImageObject", "url": "https://facebot.dhastudio.xyz/assets/icon.webp" } },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://facebot.dhastudio.xyz/blog/ai-age-filter-how-it-works.html" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://facebot.dhastudio.xyz/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://facebot.dhastudio.xyz/blog.html" },
+      { "@type": "ListItem", "position": 3, "name": "The AI Age Filter: How It Works and How to Use It" }
+    ]
+  }
+  </script>
+  <link href="../assets/icon.webp" rel="icon" type="image/png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #0a0a0f;
+      --surface: #13131a;
+      --border:  rgba(255,255,255,0.08);
+      --accent:  #6c63ff;
+      --accent2: #ff6584;
+      --text:    #f0f0f5;
+      --muted:   #888899;
+      --radius:  20px;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      overflow-x: hidden;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 48px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10,10,15,0.85);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .nav-logo img {
+      width: 28px; height: 28px;
+      border-radius: 7px;
+      object-fit: cover;
+    }
+
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--text); }
+
+    /* ─── BREADCRUMB ─── */
+    .breadcrumb {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 24px 0;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .breadcrumb a { color: var(--muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--text); }
+
+    /* ─── ARTICLE ─── */
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
+    }
+
+    article header { margin-bottom: 40px; }
+
+    article h1 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 900;
+      letter-spacing: -1px;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .post-meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    article h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin: 40px 0 16px;
+      letter-spacing: -0.3px;
+    }
+
+    article h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin: 28px 0 12px;
+    }
+
+    article p { margin-bottom: 18px; color: #c9c9d6; font-weight: 300; }
+    article strong { color: var(--text); font-weight: 500; }
+
+    article img {
+      width: 100%;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      margin: 24px 0;
+      display: block;
+    }
+
+    article a { color: var(--accent); }
+
+    /* ─── CTA ─── */
+    .cta {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 40px 32px;
+      text-align: center;
+      margin-top: 48px;
+    }
+    .cta h2 { margin: 0 0 12px; }
+    .cta p { color: var(--muted); margin-bottom: 24px; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 28px;
+      border-radius: 14px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      font-family: 'Roboto', sans-serif;
+      text-decoration: none;
+      transition: all 0.2s;
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 0 30px rgba(108,99,255,0.4);
+    }
+    .btn:hover { filter: brightness(1.15); transform: translateY(-2px); }
+
+    /* ─── FOOTER ─── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    footer p { color: var(--muted); font-size: 0.85rem; }
+    footer a { color: var(--muted); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
+    footer a:hover { color: var(--text); }
+    .footer-links { display: flex; gap: 24px; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 640px) {
+      nav { padding: 20px 24px; }
+      .nav-links { display: none; }
+      footer { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <img src="../assets/icon.webp" alt="FaceBot icon"/>
+      <span>FaceBot</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../index.html#features">Features</a></li>
+      <li><a href="../index.html#download">Download</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+    </ul>
+  </nav>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb">
+    <a href="../index.html">Home</a> &nbsp;›&nbsp; <a href="../blog.html">Blog</a> &nbsp;›&nbsp; The AI Age Filter: How It Works and How to Use It
+  </div>
+
+  <!-- ARTICLE -->
+  <div class="container">
+    <article>
+      <header>
+        <h1>The AI Age Filter: How It Works and How to Use It</h1>
+        <div class="post-meta">August 25, 2026 · 5 min read</div>
+      </header>
+
+      <p>The AI age filter is one of the most popular transformations in FaceBot, and for good reason. Everyone wonders what they will look like at 80, and everyone loves seeing a childhood photo come back to life. The filter can make you look older or younger in seconds, and the results are realistic enough to fool your friends.</p>
+
+      <h2>What the age filter actually does</h2>
+      <p>When you apply the age filter, the AI analyzes the shape of your face, your skin, your hairline, and your expression. It then simulates how those features change with age. Getting older means added wrinkles, softer skin texture, changes around the eyes and jaw. Getting younger means smoother skin, fuller features, and a softer face shape.</p>
+
+      <p>The important thing to understand is that the filter works on the photo you give it. It does not guess who you are or invent a future version of you from nothing. It transforms what is already in the picture, which is why the input photo matters so much.</p>
+
+      <h2>How to use it in FaceBot</h2>
+      <p>Open FaceBot and choose the age transformation from the home screen. You will see options to age or de-age the person in the photo. Pick the target age if you want a specific one, or let the app choose a realistic jump.</p>
+
+      <p>Select a photo where the face is clearly visible, front-facing, and well lit. Tap generate and wait a few seconds. Save the result to your gallery or share it directly.</p>
+
+      <h2>How to get realistic results</h2>
+      <p><strong>Use a frontal, well-lit photo.</strong> This is the same rule as every AI transformation. Profile shots and dark photos produce weaker results.</p>
+
+      <p><strong>One face per photo.</strong> The filter works on a single face. Crop the photo first if there are other people in it.</p>
+
+      <p><strong>No glasses or heavy makeup.</strong> These elements confuse the transformation. The more of the natural face the AI can see, the more believable the result.</p>
+
+      <p><strong>Choose a target age that makes sense.</strong> A jump of twenty to fifty years looks natural. Trying to turn a child into a senior citizen in one step can look odd, just like turning a grandparent into a baby.</p>
+
+      <h2>Fun ways to use the age filter</h2>
+      <p>See yourself at 80 and share the result with your family group chat. Age your partner's photo and compare reactions. De-age your parents' wedding photo so they look like the day they met. Create a series: a childhood photo, your current photo, and a future version, all in one post.</p>
+
+      <p>The age filter is also a great companion to other transformations. Combine it with the <a href="ai-selfie-styles-ideas.html">AI selfie styles</a> to see a cinematic version of your future self, or use it in a <a href="how-to-make-ai-videos-from-photos.html">photo to video</a> clip for an even stronger reaction.</p>
+
+      <h2>One honest note</h2>
+      <p>The age filter is a simulation, not a prediction. It cannot know how you will actually age, what your health will be like, or how your lifestyle will shape your face. Treat it as a fun projection, not a fortune teller.</p>
+
+      <!-- CTA -->
+      <div class="cta">
+        <h2>See yourself at any age</h2>
+        <p>Download FaceBot for free on iOS and Android and try the age filter in seconds.</p>
+        <a class="btn" href="../index.html#download">Download FaceBot</a>
+      </div>
+    </article>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 FaceBot. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="../index.html">Home</a>
+      <a href="../blog.html">Blog</a>
+      <a href="../privacy-policy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Use</a>
+      <a href="mailto:contact@dhastudio.xyz">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>

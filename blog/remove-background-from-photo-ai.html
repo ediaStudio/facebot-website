@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How to Remove and Replace Photo Backgrounds with AI | FaceBot</title>
+  <meta name="description" content="Remove or replace the background of any photo in seconds with FaceBot. Simple steps and tips for clean cutouts on every device."/>
+  <link rel="canonical" href="https://facebot.dhastudio.xyz/blog/remove-background-from-photo-ai.html"/>
+  <meta name="robots" content="index, follow"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:site_name" content="FaceBot"/>
+  <meta property="og:title" content="How to Remove and Replace Photo Backgrounds with AI"/>
+  <meta property="og:description" content="Remove or replace the background of any photo in seconds with FaceBot. Simple steps and tips for clean cutouts."/>
+  <meta property="og:url" content="https://facebot.dhastudio.xyz/blog/remove-background-from-photo-ai.html"/>
+  <meta property="og:image" content="https://facebot.dhastudio.xyz/screenshots/screen5.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="How to Remove and Replace Photo Backgrounds with AI"/>
+  <meta name="twitter:description" content="Remove or replace the background of any photo in seconds with FaceBot."/>
+  <meta name="twitter:image" content="https://facebot.dhastudio.xyz/screenshots/screen5.png"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How to Remove and Replace Photo Backgrounds with AI",
+    "description": "Remove or replace the background of any photo in seconds with FaceBot. Simple steps and tips for clean cutouts on every device.",
+    "image": "https://facebot.dhastudio.xyz/screenshots/screen5.png",
+    "datePublished": "2026-08-27",
+    "dateModified": "2026-08-27",
+    "author": { "@type": "Organization", "name": "FaceBot Team" },
+    "publisher": { "@type": "Organization", "name": "FaceBot", "logo": { "@type": "ImageObject", "url": "https://facebot.dhastudio.xyz/assets/icon.webp" } },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://facebot.dhastudio.xyz/blog/remove-background-from-photo-ai.html" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://facebot.dhastudio.xyz/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://facebot.dhastudio.xyz/blog.html" },
+      { "@type": "ListItem", "position": 3, "name": "How to Remove and Replace Photo Backgrounds with AI" }
+    ]
+  }
+  </script>
+  <link href="../assets/icon.webp" rel="icon" type="image/png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #0a0a0f;
+      --surface: #13131a;
+      --border:  rgba(255,255,255,0.08);
+      --accent:  #6c63ff;
+      --accent2: #ff6584;
+      --text:    #f0f0f5;
+      --muted:   #888899;
+      --radius:  20px;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      overflow-x: hidden;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 48px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10,10,15,0.85);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .nav-logo img {
+      width: 28px; height: 28px;
+      border-radius: 7px;
+      object-fit: cover;
+    }
+
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--text); }
+
+    /* ─── BREADCRUMB ─── */
+    .breadcrumb {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 24px 0;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .breadcrumb a { color: var(--muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--text); }
+
+    /* ─── ARTICLE ─── */
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
+    }
+
+    article header { margin-bottom: 40px; }
+
+    article h1 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 900;
+      letter-spacing: -1px;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .post-meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    article h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin: 40px 0 16px;
+      letter-spacing: -0.3px;
+    }
+
+    article h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin: 28px 0 12px;
+    }
+
+    article p { margin-bottom: 18px; color: #c9c9d6; font-weight: 300; }
+    article strong { color: var(--text); font-weight: 500; }
+
+    article img {
+      width: 100%;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      margin: 24px 0;
+      display: block;
+    }
+
+    article a { color: var(--accent); }
+
+    /* ─── CTA ─── */
+    .cta {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 40px 32px;
+      text-align: center;
+      margin-top: 48px;
+    }
+    .cta h2 { margin: 0 0 12px; }
+    .cta p { color: var(--muted); margin-bottom: 24px; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 28px;
+      border-radius: 14px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      font-family: 'Roboto', sans-serif;
+      text-decoration: none;
+      transition: all 0.2s;
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 0 30px rgba(108,99,255,0.4);
+    }
+    .btn:hover { filter: brightness(1.15); transform: translateY(-2px); }
+
+    /* ─── FOOTER ─── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    footer p { color: var(--muted); font-size: 0.85rem; }
+    footer a { color: var(--muted); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
+    footer a:hover { color: var(--text); }
+    .footer-links { display: flex; gap: 24px; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 640px) {
+      nav { padding: 20px 24px; }
+      .nav-links { display: none; }
+      footer { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <img src="../assets/icon.webp" alt="FaceBot icon"/>
+      <span>FaceBot</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../index.html#features">Features</a></li>
+      <li><a href="../index.html#download">Download</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+    </ul>
+  </nav>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb">
+    <a href="../index.html">Home</a> &nbsp;›&nbsp; <a href="../blog.html">Blog</a> &nbsp;›&nbsp; How to Remove and Replace Photo Backgrounds with AI
+  </div>
+
+  <!-- ARTICLE -->
+  <div class="container">
+    <article>
+      <header>
+        <h1>How to Remove and Replace Photo Backgrounds with AI</h1>
+        <div class="post-meta">August 27, 2026 · 4 min read</div>
+      </header>
+
+      <p>Removing a background used to mean opening a desktop editor, zooming in, and carefully tracing around every strand of hair. FaceBot does it in seconds with AI, and the cutout is usually clean enough that nobody can tell the background was never there.</p>
+
+      <h2>What you can do with a background removal</h2>
+      <p>The most common uses are practical: a clean profile picture for work, a product photo for a listing, or a portrait with a plain white background for an official document. Then there are the fun uses: dropping yourself into a famous landmark, a beach, or a completely imaginary scene.</p>
+
+      <p>Because the tool separates the person from the background, you can place them anywhere. That is the same principle behind many of the most shared AI photos on social media.</p>
+
+      <h2>How to do it in FaceBot</h2>
+      <p>Open FaceBot and choose the background tool. Select the photo, and the AI detects the person automatically. You can remove the background completely to get a transparent cutout, or replace it with a new one from the built-in collection.</p>
+
+      <p>If you want to use your own background, pick a plain image from your gallery and the app will place the cutout over it. You can also adjust the position and size of the person before saving.</p>
+
+      <h2>Choosing the right source photo</h2>
+      <p>Background removal works best when the person stands out from the background. A clear contrast between the subject and what is behind them gives the cleanest edge. For example, a person in a dark jacket against a light wall cuts out perfectly.</p>
+
+      <p>Photos with busy backgrounds, like crowds or foliage, are harder. The AI still handles them, but the edge around the person may need a closer look. When in doubt, take a new photo in front of a plain wall.</p>
+
+      <p>Lighting matters too. Soft, even light on the face and shoulders produces a much cleaner cutout than harsh sunlight or heavy shadows.</p>
+
+      <h2>Hair, glasses, and other tricky details</h2>
+      <p>Hair is the hardest part of any background removal, which is why the old manual tools took so long. AI handles flyaway hairs surprisingly well, but very frizzy hair against a busy background can still cause small imperfections. A quick fix is to zoom in on the result and, if needed, run the photo through the <a href="enhance-blurry-photos-with-ai.html">AI enhancer</a> afterward to clean up the edges.</p>
+
+      <p>Glasses are usually fine, as long as they do not have heavy reflections. Hats and scarves are no problem at all.</p>
+
+      <h2>What to do with your cutouts</h2>
+      <p>Build a consistent set of profile pictures for every platform. Create a simple product-style photo for a side hustle listing. Or combine cutouts with other transformations: put your cutout on a background and then run an <a href="ai-selfie-styles-ideas.html">AI selfie style</a> to merge everything into one cohesive scene.</p>
+
+      <p>Background replacement also pairs naturally with the <a href="how-to-make-ai-videos-from-photos.html">photo to video tool</a>, since a clean subject makes the animated result much more stable.</p>
+
+      <!-- CTA -->
+      <div class="cta">
+        <h2>Cut out your background in seconds</h2>
+        <p>Download FaceBot for free on iOS and Android and try the background tool today.</p>
+        <a class="btn" href="../index.html#download">Download FaceBot</a>
+      </div>
+    </article>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 FaceBot. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="../index.html">Home</a>
+      <a href="../blog.html">Blog</a>
+      <a href="../privacy-policy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Use</a>
+      <a href="mailto:contact@dhastudio.xyz">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FaceBot Blog: AI Photo and Video Tips</title>
+  <meta name="description" content="Learn how to make AI videos from photos, use the age filter, enhance blurry pictures and create viral AI content with FaceBot. Tutorials, tips and ideas."/>
+  <link rel="canonical" href="https://facebot.dhastudio.xyz/blog.html"/>
+  <meta name="robots" content="index, follow"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="FaceBot"/>
+  <meta property="og:title" content="FaceBot Blog: AI Photo and Video Tips"/>
+  <meta property="og:description" content="Learn how to make AI videos from photos, use the age filter, enhance blurry pictures and create viral AI content with FaceBot."/>
+  <meta property="og:url" content="https://facebot.dhastudio.xyz/blog.html"/>
+  <meta property="og:image" content="https://facebot.dhastudio.xyz/assets/icon.webp"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="FaceBot Blog: AI Photo and Video Tips"/>
+  <meta name="twitter:description" content="Tutorials, tips and ideas to create stunning AI photos and videos with FaceBot."/>
+  <meta name="twitter:image" content="https://facebot.dhastudio.xyz/assets/icon.webp"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "FaceBot Blog",
+    "url": "https://facebot.dhastudio.xyz/blog.html",
+    "description": "Tutorials and tips to create AI photos and videos with FaceBot.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "FaceBot"
+    }
+  }
+  </script>
+  <link href="assets/icon.webp" rel="icon" type="image/png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #0a0a0f;
+      --surface: #13131a;
+      --border:  rgba(255,255,255,0.08);
+      --accent:  #6c63ff;
+      --accent2: #ff6584;
+      --text:    #f0f0f5;
+      --muted:   #888899;
+      --radius:  20px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 48px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10,10,15,0.85);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .nav-logo img {
+      width: 28px; height: 28px;
+      border-radius: 7px;
+      object-fit: cover;
+    }
+
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--text); }
+    .nav-links a.active { color: var(--text); }
+
+    /* ─── HEADER ─── */
+    .blog-header {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 80px 24px 40px;
+      text-align: center;
+    }
+
+    .blog-header .label {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    .blog-header h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 900;
+      letter-spacing: -1px;
+      margin-bottom: 16px;
+    }
+
+    .blog-header p {
+      color: var(--muted);
+      font-size: 1rem;
+      font-weight: 300;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    /* ─── GRID ─── */
+    .blog-grid {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px 24px 100px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .post-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      text-decoration: none;
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .post-card:hover { border-color: rgba(108,99,255,0.3); transform: translateY(-4px); }
+
+    .post-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .post-card-body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
+
+    .post-meta {
+      font-size: 0.75rem;
+      color: var(--muted);
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+    }
+
+    .post-card h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+
+    .post-card p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 300;
+      flex: 1;
+    }
+
+    .post-card .read-more {
+      margin-top: 16px;
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    footer p { color: var(--muted); font-size: 0.85rem; }
+    footer a { color: var(--muted); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
+    footer a:hover { color: var(--text); }
+    .footer-links { display: flex; gap: 24px; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 640px) {
+      nav { padding: 20px 24px; }
+      .nav-links { display: none; }
+      footer { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <img src="assets/icon.webp" alt="FaceBot icon"/>
+      <span>FaceBot</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#features">Features</a></li>
+      <li><a href="index.html#download">Download</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+    </ul>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="blog-header">
+    <p class="label">FaceBot Blog</p>
+    <h1>AI photo and video tips</h1>
+    <p>Practical guides to create stunning AI transformations with FaceBot, from your first video to viral-ready content.</p>
+  </header>
+
+  <!-- GRID -->
+  <main class="blog-grid">
+
+    <a class="post-card" href="blog/how-to-make-ai-videos-from-photos.html">
+      <img src="screenshots/screen1.png" alt="AI video created from a photo with FaceBot"/>
+      <div class="post-card-body">
+        <div class="post-meta">August 25, 2026 · 6 min read</div>
+        <h2>How to Make AI Videos from Your Photos</h2>
+        <p>Turn a single photo into a cinematic AI video. Step-by-step instructions, photo tips for the best results, and mistakes to avoid.</p>
+        <span class="read-more">Read more →</span>
+      </div>
+    </a>
+
+    <a class="post-card" href="blog/ai-age-filter-how-it-works.html">
+      <img src="screenshots/screen2.png" alt="AI age filter transforming a face in FaceBot"/>
+      <div class="post-card-body">
+        <div class="post-meta">August 25, 2026 · 5 min read</div>
+        <h2>The AI Age Filter: How It Works and How to Use It</h2>
+        <p>Age and de-age faces in seconds with FaceBot. How the filter works, how to get realistic results, and fun ideas to try.</p>
+        <span class="read-more">Read more →</span>
+      </div>
+    </a>
+
+    <a class="post-card" href="blog/enhance-blurry-photos-with-ai.html">
+      <img src="screenshots/screen3.png" alt="AI photo enhancer sharpening a blurry picture in FaceBot"/>
+      <div class="post-card-body">
+        <div class="post-meta">August 26, 2026 · 5 min read</div>
+        <h2>How to Enhance Blurry Photos with AI</h2>
+        <p>Fix blurry, dark, or low-quality photos with the FaceBot AI enhancer. What it can really do, what it can't, and how to get sharp results.</p>
+        <span class="read-more">Read more →</span>
+      </div>
+    </a>
+
+    <a class="post-card" href="blog/ai-selfie-styles-ideas.html">
+      <img src="screenshots/screen4.png" alt="AI selfie styles generated with FaceBot"/>
+      <div class="post-card-body">
+        <div class="post-meta">August 26, 2026 · 6 min read</div>
+        <h2>10 AI Selfie Styles You Should Try</h2>
+        <p>From cinematic portraits to anime looks, ten AI selfie styles to try with FaceBot, with tips for the most striking results.</p>
+        <span class="read-more">Read more →</span>
+      </div>
+    </a>
+
+    <a class="post-card" href="blog/remove-background-from-photo-ai.html">
+      <img src="screenshots/screen5.png" alt="Background removed from a photo with FaceBot AI"/>
+      <div class="post-card-body">
+        <div class="post-meta">August 27, 2026 · 4 min read</div>
+        <h2>How to Remove and Replace Photo Backgrounds with AI</h2>
+        <p>Remove or replace the background of any photo in seconds with FaceBot. Simple steps and tips for clean cutouts.</p>
+        <span class="read-more">Read more →</span>
+      </div>
+    </a>
+
+    <a class="post-card" href="blog/viral-ai-content-tiktok-reels.html">
+      <img src="screenshots/screen6.png" alt="Viral AI content for TikTok and Reels made with FaceBot"/>
+      <div class="post-card-body">
+        <div class="post-meta">August 27, 2026 · 6 min read</div>
+        <h2>How to Create Viral AI Content for TikTok and Reels</h2>
+        <p>AI photos and videos are taking over short-form platforms. How to use FaceBot to create scroll-stopping content people share.</p>
+        <span class="read-more">Read more →</span>
+      </div>
+    </a>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 FaceBot. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="mailto:contact@dhastudio.xyz">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>
