@@ -194,6 +194,39 @@
     }
     .btn:hover { filter: brightness(1.15); transform: translateY(-2px); }
 
+    .store-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 8px; }
+
+    .store-btn {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+    .store-btn:hover { transform: translateY(-2px); }
+    .store-btn img { height: 52px; width: auto; display: block; }
+
+    /* ─── RELATED ─── */
+    .related { margin-top: 48px; }
+    .related h2 { margin: 0 0 20px; }
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .related-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      text-decoration: none;
+      color: var(--text);
+      display: block;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .related-card:hover { border-color: rgba(108,99,255,0.3); transform: translateY(-2px); }
+    .related-card .r-title { font-size: 0.95rem; font-weight: 700; line-height: 1.4; margin-bottom: 6px; }
+    .related-card .r-meta { font-size: 0.75rem; color: var(--muted); }
+
     /* ─── FOOTER ─── */
     footer {
       border-top: 1px solid var(--border);
@@ -286,9 +319,35 @@
       <div class="cta">
         <h2>Make your first AI video tonight</h2>
         <p>Download FaceBot for free on iOS and Android and start creating content people share.</p>
-        <a class="btn" href="../index.html#download">Download FaceBot</a>
+        <div class="store-buttons">
+          <a href="https://apps.apple.com/us/app/id1497436522" class="store-btn">
+            <img src="../assets/appstore.png" alt="Download FaceBot on the App Store"/>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=io.edia.agerecognitionapp" class="store-btn">
+            <img src="../assets/playstore.png" alt="Get FaceBot on Google Play"/>
+          </a>
+        </div>
       </div>
     </article>
+
+    <!-- RELATED -->
+    <section class="related">
+      <h2>Related articles</h2>
+      <div class="related-grid">
+        <a class="related-card" href="how-to-make-ai-videos-from-photos.html">
+          <div class="r-title">How to Make AI Videos from Your Photos</div>
+          <div class="r-meta">August 25, 2026</div>
+        </a>
+        <a class="related-card" href="ai-age-filter-how-it-works.html">
+          <div class="r-title">The AI Age Filter: How It Works and How to Use It</div>
+          <div class="r-meta">August 25, 2026</div>
+        </a>
+        <a class="related-card" href="ai-selfie-styles-ideas.html">
+          <div class="r-title">10 AI Selfie Styles You Should Try</div>
+          <div class="r-meta">August 26, 2026</div>
+        </a>
+      </div>
+    </section>
   </div>
 
   <!-- FOOTER -->
