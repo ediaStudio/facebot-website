@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How to Make Your Photo Dance with AI | FaceBot</title>
+  <meta name="description" content="Dance videos from a single photo are all over social media. See how FaceBot Motion Control turns a full-body shot into a dancing clip, step by step."/>
+  <link rel="canonical" href="https://facebot.dhastudio.xyz/blog/how-to-make-your-photo-dance-with-ai.html"/>
+  <meta name="robots" content="index, follow"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:site_name" content="FaceBot"/>
+  <meta property="og:title" content="How to Make Your Photo Dance with AI"/>
+  <meta property="og:description" content="Turn a full-body photo into a dancing video with FaceBot Motion Control: pick a built-in dance clip or your own reference, then generate in minutes."/>
+  <meta property="og:url" content="https://facebot.dhastudio.xyz/blog/how-to-make-your-photo-dance-with-ai.html"/>
+  <meta property="og:image" content="https://facebot.dhastudio.xyz/screenshots/screen2.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="How to Make Your Photo Dance with AI"/>
+  <meta name="twitter:description" content="Turn a full-body photo into a dancing video with FaceBot Motion Control."/>
+  <meta name="twitter:image" content="https://facebot.dhastudio.xyz/screenshots/screen2.png"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How to Make Your Photo Dance with AI",
+    "description": "Dance videos from a single photo are all over social media. See how FaceBot Motion Control turns a full-body shot into a dancing clip, step by step.",
+    "image": "https://facebot.dhastudio.xyz/screenshots/screen2.png",
+    "datePublished": "2026-09-28",
+    "dateModified": "2026-09-28",
+    "author": { "@type": "Organization", "name": "FaceBot Team" },
+    "publisher": { "@type": "Organization", "name": "FaceBot", "logo": { "@type": "ImageObject", "url": "https://facebot.dhastudio.xyz/assets/icon.webp" } },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://facebot.dhastudio.xyz/blog/how-to-make-your-photo-dance-with-ai.html" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://facebot.dhastudio.xyz/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://facebot.dhastudio.xyz/blog.html" },
+      { "@type": "ListItem", "position": 3, "name": "How to Make Your Photo Dance with AI" }
+    ]
+  }
+  </script>
+  <link href="../assets/icon.webp" rel="icon" type="image/png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #0a0a0f;
+      --surface: #13131a;
+      --border:  rgba(255,255,255,0.08);
+      --accent:  #6c63ff;
+      --accent2: #ff6584;
+      --text:    #f0f0f5;
+      --muted:   #888899;
+      --radius:  20px;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      overflow-x: hidden;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 48px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10,10,15,0.85);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .nav-logo img {
+      width: 28px; height: 28px;
+      border-radius: 7px;
+      object-fit: cover;
+    }
+
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--text); }
+
+    /* ─── BREADCRUMB ─── */
+    .breadcrumb {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 24px 0;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .breadcrumb a { color: var(--muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--text); }
+
+    /* ─── ARTICLE ─── */
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
+    }
+
+    article header { margin-bottom: 40px; }
+
+    article h1 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 900;
+      letter-spacing: -1px;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .post-meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    article h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin: 40px 0 16px;
+      letter-spacing: -0.3px;
+    }
+
+    article h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin: 28px 0 12px;
+    }
+
+    article p { margin-bottom: 18px; color: #c9c9d6; font-weight: 300; }
+    article strong { color: var(--text); font-weight: 500; }
+
+    article img {
+      width: 100%;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      margin: 24px 0;
+      display: block;
+    }
+
+    article a { color: var(--accent); }
+
+    /* ─── CTA ─── */
+    .cta {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 40px 32px;
+      text-align: center;
+      margin-top: 48px;
+    }
+    .cta h2 { margin: 0 0 12px; }
+    .cta p { color: var(--muted); margin-bottom: 24px; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 28px;
+      border-radius: 14px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      font-family: 'Roboto', sans-serif;
+      text-decoration: none;
+      transition: all 0.2s;
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 0 30px rgba(108,99,255,0.4);
+    }
+    .btn:hover { filter: brightness(1.15); transform: translateY(-2px); }
+
+    .store-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 8px; }
+
+    .store-btn {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+    .store-btn:hover { transform: translateY(-2px); }
+    .store-btn img { height: 52px; width: auto; display: block; }
+
+    /* ─── RELATED ─── */
+    .related { margin-top: 48px; }
+    .related h2 { margin: 0 0 20px; }
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .related-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      text-decoration: none;
+      color: var(--text);
+      display: block;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .related-card:hover { border-color: rgba(108,99,255,0.3); transform: translateY(-2px); }
+    .related-card .r-title { font-size: 0.95rem; font-weight: 700; line-height: 1.4; margin-bottom: 6px; }
+    .related-card .r-meta { font-size: 0.75rem; color: var(--muted); }
+
+    /* ─── FOOTER ─── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    footer p { color: var(--muted); font-size: 0.85rem; }
+    footer a { color: var(--muted); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
+    footer a:hover { color: var(--text); }
+    .footer-links { display: flex; gap: 24px; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 640px) {
+      nav { padding: 20px 24px; }
+      .nav-links { display: none; }
+      footer { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <img src="../assets/icon.webp" alt="FaceBot icon"/>
+      <span>FaceBot</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../index.html#features">Features</a></li>
+      <li><a href="../index.html#download">Download</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+    </ul>
+  </nav>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb">
+    <a href="../index.html">Home</a> &nbsp;›&nbsp; <a href="../blog.html">Blog</a> &nbsp;›&nbsp; How to Make Your Photo Dance with AI
+  </div>
+
+  <!-- ARTICLE -->
+  <div class="container">
+    <article>
+      <header>
+        <h1>How to Make Your Photo Dance with AI</h1>
+        <div class="post-meta">September 28, 2026 · 6 min read</div>
+      </header>
+
+      <p>Dance videos built from a single photo are everywhere right now. One picture of someone standing still turns into a clip where they hit a dance move, and the result looks like it took a choreographer, a camera crew, and an afternoon to put together. It took one photo and one short clip.</p>
+
+      <p>FaceBot has a tool built for exactly this. It is called Motion Control, and once you know what it needs from your photo and your reference video, you can make a convincing dancing clip in a few taps. Here is the full workflow, including the small details that decide whether the result looks natural or unsettling.</p>
+
+      <h2>What Motion Control does</h2>
+      <p>Motion Control works by transferring movement. You give it two inputs: a full-body photo of the person you want to animate, and a short reference clip that contains the movement you want them to perform. The AI studies the dance or gesture in the clip, then replays that movement on the person from your photo. Their face, hair, and body proportions stay theirs. Only the motion is borrowed.</p>
+
+      <p>You will find Motion Control in the Tools tab of FaceBot, marked with a diamond badge. That badge tells you two useful things before you start. It is one of the premium video features, and it uses more credits than a photo edit, because the generation behind it is heavier. Plan for a few minutes of processing rather than a few seconds.</p>
+
+      <h2>Start with a full-body photo</h2>
+      <p>This is the decision that matters most. The AI has to see what the body is doing before it can change it, so your photo should show the person from head to feet, standing, with nothing important cropped away.</p>
+
+      <h3>Show the whole body</h3>
+      <p>If the photo stops at the waist, the tool has to guess what happens below it, and the guess shows. A shot that cuts off at the ankles or leaves one leg out of frame is the most common reason a dancing result looks strange. Step back until there is a little empty space above the head and below the feet.</p>
+
+      <h3>Keep it sharp and evenly lit</h3>
+      <p>Motion on a soft photo stays soft. Use a picture where the person is in focus and the light is even, ideally coming from the front, since a dark face or a hard shadow across half the body follows the clip from start to finish. If your best picture is slightly blurry, clean it up first with the enhancer. Our guide on <a href="enhance-blurry-photos-with-ai.html">enhancing blurry photos with AI</a> covers that step.</p>
+
+      <h3>Stand in a neutral pose</h3>
+      <p>The cleanest starting point is simple: standing straight, arms relaxed at the sides, feet slightly apart, shoulders square to the camera. Crossed arms, hands in pockets, sitting positions, and heavy leans all fight with the movement you are about to add. A plain background behind the person helps too, since the tool concentrates on the body.</p>
+
+      <h2>Choose the movement</h2>
+      <p>There are two ways to supply the dance. The quick way is the row of ready-made clips under the photo and video slots on the Motion Control screen. Tap one and it loads into the reference slot, covering dance routines and playful gestures in a few seconds of video each. If a move catches your eye there, you can generate immediately and skip the search.</p>
+
+      <p>The second way is your own clip: tap the reference video slot to import a video from your gallery, so you can recreate a trend or copy a move you found online. Keep it short. Clips longer than six seconds are trimmed automatically, and files above 50 MB are refused. A crowded clip full of people, camera shake, or a dancer who keeps leaving the frame will confuse the transfer.</p>
+
+      <p>Match the two inputs to each other. A full-body dance clip pairs best with a full-body photo, and a gesture filmed from the waist up pairs best with a similar shot, so the framing on both sides tells the same story.</p>
+
+      <h2>Run the generation in FaceBot</h2>
+      <p>Open FaceBot, go to the Tools tab, and tap Motion Control. Load your full-body photo into the first slot, then either tap a built-in clip or import your own reference in the second. Check your credit balance in the top corner, then tap Generate.</p>
+
+      <p>The run takes a few minutes, which is normal for this kind of video feature. You do not have to watch the screen: the generation keeps going if you leave, and FaceBot notifies you when the clip is ready. When it is done, the video plays on a loop so you can judge the movement properly, and you can download it, share it straight to another app, or reset the screen to try the same photo with a different move.</p>
+
+      <h2>When the result looks off</h2>
+      <p>Most disappointing results trace back to an input rather than to the tool. If the face is right but the movement looks stiff or broken, the reference clip is the usual suspect: swap it for something simpler, with one person in frame and a steady camera. If the body looks stretched or oddly shaped, go back to the photo and check that every limb is visible and that the person is not leaning.</p>
+
+      <p>Change one thing at a time. If you swap the photo and the clip together, you will not know which one fixed the problem, and you will repeat the same mistake on the next attempt. Adjust your expectations too: Motion Control interprets a movement on a new body, so the clip is a short, stylized take rather than a frame-for-frame copy.</p>
+
+      <h2>Ideas worth trying</h2>
+      <p>Start with people you know. Make a grandparent dance (with their permission), turn a childhood photo into a clip for the family group chat, or run the same photo through three different templates and cut the clips into one longer video. Recreating a dance trend with your own picture is the most reliable format, since viewers already know the move and are watching to see how it lands on you.</p>
+
+      <h2>Sharing a dance video that gets watched</h2>
+      <p>Your clip leaves FaceBot in vertical format already, so it fits TikTok, Reels, and Shorts without cropping. Save it, open your editing app of choice, and add a trending sound before posting. Sound is what carries these clips: the move sets the joke, but the audio is what makes people stop scrolling. A clip that opens mid-movement also holds attention better than one that opens on a still photo. Our guide on <a href="viral-ai-content-tiktok-reels.html">creating viral AI content for TikTok and Reels</a> covers more formats that tend to perform.</p>
+
+      <p>Motion Control sits alongside the rest of the FaceBot video tools, and it is the one that asks for a genuinely full-body photo. Pick a good standing shot, choose a move you would actually want to see, and let the AI handle the choreography. If you want other ways to bring a picture to life, or your best photo is a close-up rather than a full-body shot, our guide on <a href="how-to-make-ai-videos-from-photos.html">making AI videos from your photos</a> covers the wider workflow.</p>
+
+      <!-- CTA -->
+      <div class="cta">
+        <h2>Ready to try it?</h2>
+        <p>Download FaceBot for free on iOS and Android and make your first AI video in minutes.</p>
+        <div class="store-buttons">
+          <a href="https://apps.apple.com/us/app/id1497436522" class="store-btn">
+            <img src="../assets/appstore.png" alt="Download FaceBot on the App Store"/>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=io.edia.agerecognitionapp" class="store-btn">
+            <img src="../assets/playstore.png" alt="Get FaceBot on Google Play"/>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- RELATED -->
+    <section class="related">
+      <h2>Related articles</h2>
+      <div class="related-grid">
+        <a class="related-card" href="how-to-bring-old-family-photos-to-life-with-ai.html">
+          <div class="r-title">How to Bring Old Family Photos to Life with AI</div>
+          <div class="r-meta">September 21, 2026</div>
+        </a>
+        <a class="related-card" href="ai-selfie-styles-ideas.html">
+          <div class="r-title">10 AI Selfie Styles You Should Try</div>
+          <div class="r-meta">August 26, 2026</div>
+        </a>
+        <a class="related-card" href="ai-age-filter-how-it-works.html">
+          <div class="r-title">The AI Age Filter: How It Works and How to Use It</div>
+          <div class="r-meta">August 25, 2026</div>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 FaceBot. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="../index.html">Home</a>
+      <a href="../blog.html">Blog</a>
+      <a href="../privacy-policy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Use</a>
+      <a href="mailto:contact@dhastudio.xyz">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>
