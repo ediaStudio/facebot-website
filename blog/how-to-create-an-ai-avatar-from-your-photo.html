@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How to Create an AI Avatar from Your Photo | FaceBot</title>
+  <meta name="description" content="Learn how to turn a selfie into a stylized AI avatar with FaceBot: photo tips, style ideas, and how to get a profile-ready picture or a short animated clip."/>
+  <link rel="canonical" href="https://facebot.dhastudio.xyz/blog/how-to-create-an-ai-avatar-from-your-photo.html"/>
+  <meta name="robots" content="index, follow"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:site_name" content="FaceBot"/>
+  <meta property="og:title" content="How to Create an AI Avatar from Your Photo"/>
+  <meta property="og:description" content="Turn a selfie into a stylized AI avatar with FaceBot: choose a look, get a profile-ready picture, or make a short animated avatar from the same photo."/>
+  <meta property="og:url" content="https://facebot.dhastudio.xyz/blog/how-to-create-an-ai-avatar-from-your-photo.html"/>
+  <meta property="og:image" content="https://facebot.dhastudio.xyz/screenshots/screen6.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="How to Create an AI Avatar from Your Photo"/>
+  <meta name="twitter:description" content="Turn a selfie into a stylized AI avatar with FaceBot in a few minutes."/>
+  <meta name="twitter:image" content="https://facebot.dhastudio.xyz/screenshots/screen6.png"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How to Create an AI Avatar from Your Photo",
+    "description": "Learn how to turn a selfie into a stylized AI avatar with FaceBot: photo tips, style ideas, and how to get a profile-ready picture or a short animated clip.",
+    "image": "https://facebot.dhastudio.xyz/screenshots/screen6.png",
+    "datePublished": "2026-10-08",
+    "dateModified": "2026-10-08",
+    "author": { "@type": "Organization", "name": "FaceBot Team" },
+    "publisher": { "@type": "Organization", "name": "FaceBot", "logo": { "@type": "ImageObject", "url": "https://facebot.dhastudio.xyz/assets/icon.webp" } },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://facebot.dhastudio.xyz/blog/how-to-create-an-ai-avatar-from-your-photo.html" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://facebot.dhastudio.xyz/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://facebot.dhastudio.xyz/blog.html" },
+      { "@type": "ListItem", "position": 3, "name": "How to Create an AI Avatar from Your Photo" }
+    ]
+  }
+  </script>
+  <link href="../assets/icon.webp" rel="icon" type="image/png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #0a0a0f;
+      --surface: #13131a;
+      --border:  rgba(255,255,255,0.08);
+      --accent:  #6c63ff;
+      --accent2: #ff6584;
+      --text:    #f0f0f5;
+      --muted:   #888899;
+      --radius:  20px;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      overflow-x: hidden;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 48px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10,10,15,0.85);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .nav-logo img {
+      width: 28px; height: 28px;
+      border-radius: 7px;
+      object-fit: cover;
+    }
+
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--text); }
+
+    /* ─── BREADCRUMB ─── */
+    .breadcrumb {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 24px 0;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .breadcrumb a { color: var(--muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--text); }
+
+    /* ─── ARTICLE ─── */
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
+    }
+
+    article header { margin-bottom: 40px; }
+
+    article h1 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 900;
+      letter-spacing: -1px;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .post-meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    article h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin: 40px 0 16px;
+      letter-spacing: -0.3px;
+    }
+
+    article h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin: 28px 0 12px;
+    }
+
+    article p { margin-bottom: 18px; color: #c9c9d6; font-weight: 300; }
+    article strong { color: var(--text); font-weight: 500; }
+
+    article img {
+      width: 100%;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      margin: 24px 0;
+      display: block;
+    }
+
+    article a { color: var(--accent); }
+
+    /* ─── CTA ─── */
+    .cta {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 40px 32px;
+      text-align: center;
+      margin-top: 48px;
+    }
+    .cta h2 { margin: 0 0 12px; }
+    .cta p { color: var(--muted); margin-bottom: 24px; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 28px;
+      border-radius: 14px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      font-family: 'Roboto', sans-serif;
+      text-decoration: none;
+      transition: all 0.2s;
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 0 30px rgba(108,99,255,0.4);
+    }
+    .btn:hover { filter: brightness(1.15); transform: translateY(-2px); }
+
+    .store-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 8px; }
+
+    .store-btn {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+    .store-btn:hover { transform: translateY(-2px); }
+    .store-btn img { height: 52px; width: auto; display: block; }
+
+    /* ─── RELATED ─── */
+    .related { margin-top: 48px; }
+    .related h2 { margin: 0 0 20px; }
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .related-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      text-decoration: none;
+      color: var(--text);
+      display: block;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .related-card:hover { border-color: rgba(108,99,255,0.3); transform: translateY(-2px); }
+    .related-card .r-title { font-size: 0.95rem; font-weight: 700; line-height: 1.4; margin-bottom: 6px; }
+    .related-card .r-meta { font-size: 0.75rem; color: var(--muted); }
+
+    /* ─── FOOTER ─── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    footer p { color: var(--muted); font-size: 0.85rem; }
+    footer a { color: var(--muted); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
+    footer a:hover { color: var(--text); }
+    .footer-links { display: flex; gap: 24px; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 640px) {
+      nav { padding: 20px 24px; }
+      .nav-links { display: none; }
+      footer { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <img src="../assets/icon.webp" alt="FaceBot icon"/>
+      <span>FaceBot</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../index.html#features">Features</a></li>
+      <li><a href="../index.html#download">Download</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+    </ul>
+  </nav>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb">
+    <a href="../index.html">Home</a> &nbsp;›&nbsp; <a href="../blog.html">Blog</a> &nbsp;›&nbsp; How to Create an AI Avatar from Your Photo
+  </div>
+
+  <!-- ARTICLE -->
+  <div class="container">
+    <article>
+      <header>
+        <h1>How to Create an AI Avatar from Your Photo</h1>
+        <div class="post-meta">October 8, 2026 · 5 min read</div>
+      </header>
+
+      <p>Your profile picture is the first thing people see on almost every app you use, and most of us keep recycling the same old selfie year after year. An AI avatar fixes that. FaceBot takes one clear photo and turns it into a polished, stylized version of your face, one that looks like it came from a professional shoot or a movie poster, and it works anywhere a small round picture represents you.</p>
+
+      <p>This guide walks through the whole process: what makes a good avatar source photo, how to create yours in FaceBot, which styles work best, and how to turn a static portrait into a short animated avatar.</p>
+
+      <h2>What counts as an AI avatar</h2>
+
+      <p>There are two kinds of avatars you can make, and FaceBot handles both. The first is a static avatar, a single stylized picture of you used as a profile photo. The second is animated, a short clip where the face in the picture blinks, smiles, and turns its head.</p>
+
+      <p>Both start from the same thing: one good photo of your face. Both keep your identity recognizable, so friends see you and not a stranger. That is the point of an avatar. It is you, with better light, a cleaner background, and a bit of imagination.</p>
+
+      <h2>Start with the right photo</h2>
+
+      <p>A few simple rules will save you most of the retries. Use a sharp photo where the face is in focus and takes up a good part of the frame. Light the face from the front, ideally with natural window light, and avoid dark backlight or heavy shadows. Keep one face in the picture, so crop out friends before you start. Skip sunglasses, masks, and beauty filters that bend the features, and choose a recent photo, because the avatar will look like the person in the shot.</p>
+
+      <p>If your only option is dark, small, or slightly blurry, fix it first. The FaceBot HD enhancer sharpens the face and cleans up the image, and a sharper input always gives a sharper avatar. Our guide on <a href="enhance-blurry-photos-with-ai.html">enhancing blurry photos with AI</a> explains exactly what the enhancer can and cannot do.</p>
+
+      <h2>How to create your avatar in FaceBot</h2>
+
+      <p>Open FaceBot and import the photo you prepared. Head to the styles section and pick a look. The app redraws your face in that style and shows the result in a few seconds. Generate a couple of variations and keep the one where the expression feels right. Small changes in the source photo often change the mood of the result more than the style itself.</p>
+
+      <p>Not sure which look fits you? Our roundup of <a href="ai-selfie-styles-ideas.html">ten AI selfie styles</a> walks through options like cinematic portrait, anime character, and cyberpunk, with notes on where each one shines.</p>
+
+      <p>When you are happy with the result, save it to your gallery or share it straight to the app where you need it.</p>
+
+      <h2>Turn the picture into an animated avatar</h2>
+
+      <p>A static avatar is already an upgrade, but the animated version is what makes people ask how you did it. FaceBot's video option takes the same photo and brings it to life with natural blinking, subtle head movement, and expression changes. You choose the effect, tap generate, and get a short clip that looks like a living portrait. It is the same idea as <a href="how-to-make-ai-videos-from-photos.html">making a full AI video from your photo</a>, just focused on the face.</p>
+
+      <p>For a playful angle, Motion Control goes further and can make the person in the photo dance to a template. That works well for short-form posts, and it pairs naturally with an avatar picture for a complete profile refresh.</p>
+
+      <h2>Style ideas worth trying</h2>
+
+      <p><strong>Cinematic portrait.</strong> Dramatic lighting and a film-set background. The safest pick for a profile picture that still needs to look professional, and it reads well even at small sizes.</p>
+
+      <p><strong>Anime character.</strong> A clean redraw with expressive eyes and stylized hair. Popular for gaming profiles and group chats, and it looks intentional instead of accidental.</p>
+
+      <p><strong>Cyberpunk city.</strong> Neon colors and rain-slicked streets. The loudest option, made for profiles that want to stand out.</p>
+
+      <p><strong>Renaissance painting.</strong> A classical portrait with old-master lighting. Surprisingly natural next to regular photos, which makes it easy to use across platforms.</p>
+
+      <h2>Where to use your avatar</h2>
+
+      <p>Social networks, messaging apps, community forums, game profiles, and work chats all have a spot for it. Match the style to the room: professional spaces suit the cinematic portrait or a headshot-style look, while casual spaces can take anime, cyberpunk, or something more experimental. If you go animated, use it in stories and short videos where the movement actually shows.</p>
+
+      <h2>Common mistakes to avoid</h2>
+
+      <p><strong>Expecting a different person.</strong> An AI avatar keeps your features and improves everything around them. If the result does not look like you, change the source photo instead of regenerating the same one.</p>
+
+      <p><strong>Using a group photo.</strong> The tool needs one clear face. Crop first, then generate.</p>
+
+      <p><strong>Closed eyes or a chaotic expression.</strong> Pick a frame where the eyes are open and the expression is calm, or the portrait will look off in any style.</p>
+
+      <p><strong>Waiting for the avatar to talk.</strong> An animated avatar moves and reacts, but it does not generate speech. If you want dialogue, record it yourself and lay it over the clip.</p>
+
+      <p><strong>Creating avatars of other people.</strong> If the face is not yours, ask before you generate or post. It keeps the fun respectful.</p>
+
+      <p>One photo and a couple of minutes are enough to stop looking like everyone else in the contact list. Start with a clean portrait, pick a style that fits the space where you will use it, and keep the experiments you like. Your next profile picture starts with a photo you already have.</p>
+
+      <!-- CTA -->
+      <div class="cta">
+        <h2>Ready to try it?</h2>
+        <p>Download FaceBot for free on iOS and Android and make your first AI video in minutes.</p>
+        <div class="store-buttons">
+          <a href="https://apps.apple.com/us/app/id1497436522" class="store-btn">
+            <img src="../assets/appstore.png" alt="Download FaceBot on the App Store"/>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=io.edia.agerecognitionapp" class="store-btn">
+            <img src="../assets/playstore.png" alt="Get FaceBot on Google Play"/>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- RELATED -->
+    <section class="related">
+      <h2>Related articles</h2>
+      <div class="related-grid">
+        <a class="related-card" href="how-to-make-your-photo-dance-with-ai.html">
+          <div class="r-title">How to Make Your Photo Dance with AI</div>
+          <div class="r-meta">September 28, 2026</div>
+        </a>
+        <a class="related-card" href="how-to-bring-old-family-photos-to-life-with-ai.html">
+          <div class="r-title">How to Bring Old Family Photos to Life with AI</div>
+          <div class="r-meta">September 21, 2026</div>
+        </a>
+        <a class="related-card" href="how-to-create-professional-ai-headshots-from-selfies.html">
+          <div class="r-title">How to Create Professional AI Headshots from Your Selfies</div>
+          <div class="r-meta">August 31, 2026</div>
+        </a>
+            </div>
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 FaceBot. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="../index.html">Home</a>
+      <a href="../blog.html">Blog</a>
+      <a href="../privacy-policy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Use</a>
+      <a href="mailto:contact@dhastudio.xyz">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>
