@@ -197,8 +197,8 @@
     <div class="doc-section">
       <h2>1. Information we collect</h2>
       <ul>
-        <li><strong>Photos and videos you choose.</strong> When you select a photo or video for an age estimate, a skin analysis, or an AI transformation, we upload that file to our servers. It may contain your face and other people's faces.</li>
-        <li><strong>Generated results.</strong> The images and videos created by the app, and the information attached to them (estimated age range, gender, ethnicity keywords, background keywords, face position, skin attributes).</li>
+        <li><strong>Photos and videos you choose.</strong> When you select a photo or video for an age estimate or an AI transformation, we upload that file to our servers. It may contain your face and other people's faces.</li>
+        <li><strong>Generated results.</strong> The images and videos created by the app, and the information attached to them (estimated age range, gender, ethnicity keywords, background keywords, face position).</li>
         <li><strong>Account information.</strong> A user ID, your sign-in email address if you sign in with Google, your device identifier, push notification token, language, and basic device and app information.</li>
         <li><strong>Purchases and subscriptions.</strong> Which plan or credit pack you bought, the transaction identifier, and the subscription status. Apple, Google, and RevenueCat process the payment; we never receive your card number.</li>
         <li><strong>Usage and diagnostics.</strong> Screens used, actions taken, crash reports, and performance data. If ads are shown, our advertising partner may receive an advertising identifier.</li>
@@ -210,7 +210,7 @@
       <h2>2. How we use information</h2>
       <ul>
         <li>To produce the photo or video result you requested.</li>
-        <li>To estimate an apparent age range and to analyse skin attributes when you use those features.</li>
+        <li>To estimate an apparent age range and return the related attributes when you use the age feature.</li>
         <li>To keep your history, manage credits and subscriptions, and provide customer support.</li>
         <li>To operate, secure, and improve the app, and to detect abuse or fraud.</li>
         <li>To comply with legal obligations and enforce our Terms of Use.</li>
@@ -220,35 +220,34 @@
 
     <div class="doc-section" id="face-data">
       <h2>3. Face data</h2>
-      <p>This section answers specifically how FaceBot handles face data. It applies when a photo you submit contains a face, whether or not the feature is described as an age or skin feature.</p>
+      <p>This section answers specifically how FaceBot handles face data. It applies when a photo you submit contains a face.</p>
 
       <h3>3.1 What face data we collect</h3>
-      <p>We collect the photo you choose to submit, which may include your face, and the result generated from it. From that photo, our service providers return an estimated age range, gender, ethnicity keywords, background keywords, the position of the face in the image, and, for the optional skin analysis, skin attributes. We store those results with your history entry.</p>
+      <p>We collect the photo you choose to submit, which may include your face, and the result generated from it. From that photo, our service providers return an estimated age range, gender, ethnicity keywords, background keywords, and the position of the face in the image. We store those results with your history entry.</p>
       <p>We do <strong>not</strong> create or store a face template, faceprint, face embedding, facial geometry map, or any other biometric identifier. We do <strong>not</strong> use face data to recognise or identify a person, and we do not compare one user's face with another person's face.</p>
 
       <h3>3.2 How we use face data</h3>
-      <p>We use the photo only to provide the feature you requested: estimating an apparent age, producing a skin analysis, or generating the AI photo or video you selected. The result is shown to you and saved in your history so you can view or delete it. We do not use face data for advertising, profiling, or any purpose unrelated to the feature you requested.</p>
+      <p>We use the photo only to provide the feature you requested: estimating an apparent age or generating the AI photo or video you selected. The result is shown to you and saved in your history so you can view or delete it. We do not use face data for advertising, profiling, or any purpose unrelated to the feature you requested.</p>
 
       <h3>3.3 Who processes face data and where it is stored</h3>
       <ul>
         <li><strong>Google Cloud / Firebase</strong> (Google LLC) hosts our backend and stores the photos and results in its <strong>EU multi-region</strong> storage. This is where the files are stored.</li>
         <li><strong>Everypixel</strong> receives a signed, read-only URL to the photo and returns the estimated age, gender, ethnicity, and background keywords. Everypixel's real-time age-recognition API does not store the images it processes.</li>
-        <li><strong>Face++ (Megvii)</strong> receives the photo only if you use the optional skin analysis feature, through Face++'s US API endpoint, and returns skin attributes.</li>
         <li><strong>fal.ai, Runware, and OpenAI</strong> receive the photo (or a signed URL to it) and your selected template or prompt only when you request an AI generation that uses them.</li>
       </ul>
-      <p>These providers process the image to return the requested result. They are not authorised by us to use your face data for their own advertising or to sell it. Their own privacy policies also apply: <a class="inline" href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google</a>, <a class="inline" href="https://www.everypixel.com/legal/privacy" target="_blank" rel="noopener">Everypixel</a>, <a class="inline" href="https://www.faceplusplus.com/privacy-policy/" target="_blank" rel="noopener">Face++</a>, <a class="inline" href="https://fal.ai/privacy" target="_blank" rel="noopener">fal.ai</a>, <a class="inline" href="https://runware.ai/privacy" target="_blank" rel="noopener">Runware</a>, and <a class="inline" href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noopener">OpenAI</a>.</p>
+      <p>These providers process the image to return the requested result. They are not authorised by us to use your face data for their own advertising or to sell it. Their own privacy policies also apply: <a class="inline" href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google</a>, <a class="inline" href="https://www.everypixel.com/legal/privacy" target="_blank" rel="noopener">Everypixel</a>, <a class="inline" href="https://fal.ai/privacy" target="_blank" rel="noopener">fal.ai</a>, <a class="inline" href="https://runware.ai/privacy" target="_blank" rel="noopener">Runware</a>, and <a class="inline" href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noopener">OpenAI</a>.</p>
       <p>We do not sell face data, share it with data brokers, or disclose it to advertisers.</p>
 
       <h3>3.4 How long we keep face data</h3>
       <ul>
         <li><strong>Uploaded photos and generated media</strong> stored with your account are automatically deleted <strong>180 days</strong> after they are uploaded.</li>
-        <li><strong>Photos uploaded for automated photo-quality checks or the optional skin analysis</strong> are stored separately and deleted when you delete the result or ask us to delete it; we process deletion requests within <strong>30 days</strong>.</li>
-        <li><strong>Analysis results and history entries</strong> (age range, keywords, skin attributes) are kept until you delete the entry in the app or ask us to erase them.</li>
+        <li><strong>Photos uploaded for automated photo-quality checks</strong> are stored separately and deleted when you delete the result or ask us to delete it; we process deletion requests within <strong>30 days</strong>.</li>
+        <li><strong>Analysis results and history entries</strong> (age range, keywords) are kept until you delete the entry in the app or ask us to erase them.</li>
       </ul>
 
       <h3>3.5 How to delete face data</h3>
       <ul>
-        <li>Delete an individual photo, video, or analysis from your History in the app.</li>
+        <li>Delete an individual photo or video from your History in the app.</li>
         <li>Delete your account from the app's settings. This removes your account and sign-in credentials; you can also email us to have your remaining history and stored files erased.</li>
         <li>Email <a class="inline" href="mailto:contact@dhastudio.xyz">contact@dhastudio.xyz</a> from the address linked to your account. We complete deletion requests within 30 days.</li>
       </ul>
@@ -279,7 +278,7 @@
       <p>We keep personal information only as long as needed for the purposes described above:</p>
       <ul>
         <li>Photos and generated media stored with your account: automatically deleted after 180 days.</li>
-        <li>Photo-quality and skin analysis images: until you delete them or ask us to.</li>
+        <li>Photo-quality images: until you delete them or ask us to.</li>
         <li>History entries and analysis results: until you delete them or ask us to erase them.</li>
         <li>Account and purchase records: while your account is active, then as long as tax and accounting law requires.</li>
         <li>Diagnostics and crash data: kept for a limited period, then deleted or aggregated.</li>
