@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title id="page-title">Privacy Policy | FaceBot</title>
-  <meta name="description" content="Privacy policy of FaceBot, the AI photo and video transformation app for iOS and Android. How we collect, use, and protect your data."/>
+  <title>Privacy Policy | FaceBot</title>
+  <meta name="description" content="Privacy policy of FaceBot, the AI photo and video transformation app for iOS and Android. How we collect, use, and protect your data, including face data."/>
   <link rel="canonical" href="https://facebot.dhastudio.xyz/privacy-policy.html"/>
   <meta name="robots" content="index, follow"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/>
-  <script src="config.js"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -28,7 +27,6 @@
       line-height: 1.8;
     }
 
-    /* ─── NAV ─── */
     nav {
       display: flex;
       justify-content: space-between;
@@ -56,7 +54,6 @@
       width: 28px; height: 28px;
       border-radius: 7px;
       object-fit: cover;
-      display: none;
     }
 
     .nav-back {
@@ -68,7 +65,6 @@
     }
     .nav-back:hover { color: var(--text); }
 
-    /* ─── CONTENT ─── */
     .container {
       max-width: 760px;
       margin: 0 auto;
@@ -114,6 +110,13 @@
       color: var(--text);
     }
 
+    .doc-section h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin: 20px 0 8px;
+      color: var(--text);
+    }
+
     .doc-section p {
       color: var(--muted);
       font-weight: 300;
@@ -145,7 +148,6 @@
     }
     a.inline:hover { text-decoration: underline; }
 
-    /* ─── FOOTER ─── */
     footer {
       border-top: 1px solid var(--border);
       padding: 32px 48px;
@@ -173,8 +175,8 @@
 
   <nav>
     <a href="index.html" class="nav-logo">
-      <img id="nav-icon" src="" alt="icon"/>
-      <span id="nav-appname"></span>
+      <img src="assets/icon.webp" alt="FaceBot icon"/>
+      <span>FaceBot</span>
     </a>
     <a href="index.html" class="nav-back">← Back to home</a>
   </nav>
@@ -184,116 +186,147 @@
     <div class="doc-header">
       <p class="doc-label">Legal</p>
       <h1>Privacy Policy</h1>
-      <p class="doc-meta" id="doc-meta"></p>
+      <p class="doc-meta">Last updated: November 20, 2026</p>
     </div>
 
     <div class="doc-section">
-      <p>This Privacy Policy describes how <strong id="pp-appname"></strong> ("we", "us", or "our") collects, uses, and shares information about you when you use our mobile application.</p>
-      <p>By using the app, you agree to the collection and use of information in accordance with this policy.</p>
+      <p>FaceBot is operated by DHA Studio ("we", "us", or "our"). This Privacy Policy explains what information we collect when you use the FaceBot mobile app for iOS and Android, how we use it, and the choices you have. It applies to the app and to this website.</p>
+      <p>Questions about this policy or your data: <a class="inline" href="mailto:contact@dhastudio.xyz">contact@dhastudio.xyz</a>.</p>
     </div>
 
     <div class="doc-section">
-      <h2>1. Information We Collect</h2>
-      <p>We may collect the following types of information:</p>
+      <h2>1. Information we collect</h2>
       <ul>
-        <li><strong>Usage Data</strong> — Information about how you use the app (screens visited, actions taken, session duration).</li>
-        <li><strong>Device Information</strong> — Device type, operating system version, unique device identifiers.</li>
-        <li><strong>Crash Reports</strong> — Diagnostic data to help us fix bugs and improve performance.</li>
-        <li><strong>Advertising Data</strong> — If the app displays ads (via AdMob), Google may collect data as described in their privacy policy.</li>
+        <li><strong>Photos and videos you choose.</strong> When you select a photo or video for an age estimate, a skin analysis, or an AI transformation, we upload that file to our servers. It may contain your face and other people's faces.</li>
+        <li><strong>Generated results.</strong> The images and videos created by the app, and the information attached to them (estimated age range, gender, ethnicity keywords, background keywords, face position, skin attributes).</li>
+        <li><strong>Account information.</strong> A user ID, your sign-in email address if you sign in with Google, your device identifier, push notification token, language, and basic device and app information.</li>
+        <li><strong>Purchases and subscriptions.</strong> Which plan or credit pack you bought, the transaction identifier, and the subscription status. Apple, Google, and RevenueCat process the payment; we never receive your card number.</li>
+        <li><strong>Usage and diagnostics.</strong> Screens used, actions taken, crash reports, and performance data. If ads are shown, our advertising partner may receive an advertising identifier.</li>
       </ul>
-      <p>We do <strong>not</strong> collect your name, email address, or any personally identifiable information unless you explicitly provide it (e.g. via a contact form).</p>
+      <p>We do not require your name, postal address, or phone number to use the app.</p>
     </div>
 
     <div class="doc-section">
-      <h2>2. How We Use Your Information</h2>
-      <p>We use the collected information to:</p>
+      <h2>2. How we use information</h2>
       <ul>
-        <li>Operate and improve the app</li>
-        <li>Analyze usage patterns to enhance user experience</li>
-        <li>Display relevant advertisements (if applicable)</li>
-        <li>Fix bugs and technical issues</li>
+        <li>To produce the photo or video result you requested.</li>
+        <li>To estimate an apparent age range and to analyse skin attributes when you use those features.</li>
+        <li>To keep your history, manage credits and subscriptions, and provide customer support.</li>
+        <li>To operate, secure, and improve the app, and to detect abuse or fraud.</li>
+        <li>To comply with legal obligations and enforce our Terms of Use.</li>
       </ul>
+      <p>We do not sell your personal information. We do not use your photos or face data for advertising, and we do not use them to identify you.</p>
     </div>
 
-    <div class="doc-section">
-      <h2>3. Third-Party Services</h2>
-      <p>The app may use third-party services that collect information. These include:</p>
+    <div class="doc-section" id="face-data">
+      <h2>3. Face data</h2>
+      <p>This section answers specifically how FaceBot handles face data. It applies when a photo you submit contains a face, whether or not the feature is described as an age or skin feature.</p>
+
+      <h3>3.1 What face data we collect</h3>
+      <p>We collect the photo you choose to submit, which may include your face, and the result generated from it. From that photo, our service providers return an estimated age range, gender, ethnicity keywords, background keywords, the position of the face in the image, and, for the optional skin analysis, skin attributes. We store those results with your history entry.</p>
+      <p>We do <strong>not</strong> create or store a face template, faceprint, face embedding, facial geometry map, or any other biometric identifier. We do <strong>not</strong> use face data to recognise or identify a person, and we do not compare one user's face with another person's face.</p>
+
+      <h3>3.2 How we use face data</h3>
+      <p>We use the photo only to provide the feature you requested: estimating an apparent age, producing a skin analysis, or generating the AI photo or video you selected. The result is shown to you and saved in your history so you can view or delete it. We do not use face data for advertising, profiling, or any purpose unrelated to the feature you requested.</p>
+
+      <h3>3.3 Who processes face data and where it is stored</h3>
       <ul>
-        <li><strong>Google AdMob</strong> — For advertising. <a class="inline" href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
-        <li><strong>Google Analytics / Firebase</strong> — For usage analytics. <a class="inline" href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></li>
+        <li><strong>Google Cloud / Firebase</strong> (Google LLC) hosts our backend and stores the photos and results in its <strong>EU multi-region</strong> storage. This is where the files are stored.</li>
+        <li><strong>Everypixel</strong> receives a signed, read-only URL to the photo and returns the estimated age, gender, ethnicity, and background keywords.</li>
+        <li><strong>Face++ (Megvii)</strong> receives the photo only if you use the optional skin analysis feature, through Face++'s US API endpoint, and returns skin attributes.</li>
+        <li><strong>fal.ai, Runware, and OpenAI</strong> receive the photo (or a signed URL to it) and your selected template or prompt only when you request an AI generation that uses them.</li>
       </ul>
-      <p>These services have their own privacy policies governing the use of your information.</p>
-    </div>
+      <p>These providers process the image to return the requested result. They are not authorised by us to use your face data for their own advertising or to sell it. Their own privacy policies also apply: <a class="inline" href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google</a>, <a class="inline" href="https://www.everypixel.com/privacy" target="_blank" rel="noopener">Everypixel</a>, <a class="inline" href="https://www.faceplusplus.com/privacy_policy/" target="_blank" rel="noopener">Face++</a>, <a class="inline" href="https://fal.ai/privacy" target="_blank" rel="noopener">fal.ai</a>, <a class="inline" href="https://runware.ai/privacy" target="_blank" rel="noopener">Runware</a>, and <a class="inline" href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noopener">OpenAI</a>.</p>
+      <p>We do not sell face data, share it with data brokers, or disclose it to advertisers.</p>
 
-    <div class="doc-section">
-      <h2>4. Data Retention</h2>
-      <p>We retain collected data only as long as necessary to provide our services and fulfill the purposes outlined in this policy. Aggregated, anonymized data may be retained indefinitely.</p>
-    </div>
-
-    <div class="doc-section">
-      <h2>5. Children's Privacy</h2>
-      <p>Our app is not directed to children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal data, please contact us and we will delete it.</p>
-    </div>
-
-    <div class="doc-section">
-      <h2>6. Your Rights</h2>
-      <p>Depending on your location, you may have the right to:</p>
+      <h3>3.4 How long we keep face data</h3>
       <ul>
-        <li>Access the personal data we hold about you</li>
-        <li>Request deletion of your data</li>
-        <li>Opt out of targeted advertising</li>
+        <li><strong>Uploaded photos and generated media</strong> stored with your account are automatically deleted <strong>180 days</strong> after they are uploaded.</li>
+        <li><strong>Photos uploaded for the optional photo-quality score or skin analysis</strong> are stored separately and deleted when you delete the result or ask us to delete it; we process deletion requests within <strong>30 days</strong>.</li>
+        <li><strong>Analysis results and history entries</strong> (age range, keywords, skin attributes) are kept until you delete the entry in the app or ask us to erase them.</li>
       </ul>
-      <p>To exercise these rights, contact us at <a class="inline" id="contact-link" href="#">contact@yourapp.com</a>.</p>
+
+      <h3>3.5 How to delete face data</h3>
+      <ul>
+        <li>Delete an individual photo, video, or analysis from your History in the app.</li>
+        <li>Delete your account from the app's settings. This removes your account and sign-in credentials; you can also email us to have your remaining history and stored files erased.</li>
+        <li>Email <a class="inline" href="mailto:contact@dhastudio.xyz">contact@dhastudio.xyz</a> from the address linked to your account. We complete deletion requests within 30 days.</li>
+      </ul>
+
+      <h3>3.6 What we never do with face data</h3>
+      <ul>
+        <li>No facial recognition or identity verification.</li>
+        <li>No faceprints, templates, or biometric identifiers.</li>
+        <li>No sale or rental of face data.</li>
+        <li>No use of face data to target advertising.</li>
+        <li>No sharing with other users or with the public.</li>
+      </ul>
     </div>
 
     <div class="doc-section">
-      <h2>7. Changes to This Policy</h2>
-      <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by updating the date at the top of this page. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+      <h2>4. Other third-party services</h2>
+      <p>We use the following services to operate FaceBot. They receive only the information needed for their function.</p>
+      <ul>
+        <li><strong>Google Cloud / Firebase</strong> — hosting, database, storage, and analytics.</li>
+        <li><strong>RevenueCat</strong> — subscription and purchase management.</li>
+        <li><strong>Apple App Store and Google Play</strong> — payment processing and app distribution.</li>
+        <li><strong>Google AdMob</strong> — advertising, where ads are shown. AdMob may receive an advertising identifier; it does not receive your photos or face data.</li>
+      </ul>
     </div>
 
     <div class="doc-section">
-      <h2>8. Contact Us</h2>
-      <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-      <p><a class="inline" id="contact-link-2" href="#">contact@yourapp.com</a></p>
+      <h2>5. Data retention</h2>
+      <p>We keep personal information only as long as needed for the purposes described above:</p>
+      <ul>
+        <li>Photos and generated media stored with your account: automatically deleted after 180 days.</li>
+        <li>Photo-quality and skin analysis images: until you delete them or ask us to.</li>
+        <li>History entries and analysis results: until you delete them or ask us to erase them.</li>
+        <li>Account and purchase records: while your account is active, then as long as tax and accounting law requires.</li>
+        <li>Diagnostics and crash data: kept for a limited period, then deleted or aggregated.</li>
+      </ul>
+    </div>
+
+    <div class="doc-section">
+      <h2>6. Security</h2>
+      <p>Data is encrypted in transit (TLS) and at rest by our hosting provider. Access to stored photos is limited to the systems and staff that need it to operate the service and to handle support or deletion requests.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2>7. Children</h2>
+      <p>FaceBot is not directed to children under 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal data, contact us and we will delete it.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2>8. Your rights</h2>
+      <p>Depending on where you live, you may have the right to access, correct, export, or delete your personal data, to object to or restrict certain processing, and to withdraw consent. To exercise any of these rights, email <a class="inline" href="mailto:contact@dhastudio.xyz">contact@dhastudio.xyz</a>. We respond within 30 days.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2>9. International transfers</h2>
+      <p>Your photos and results are stored in the European Union (Google Cloud EU multi-region). Some of our service providers process data in the United States, as described in Section 3.3. Where required, transfers rely on appropriate safeguards such as standard contractual clauses.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2>10. Changes to this policy</h2>
+      <p>We may update this Privacy Policy from time to time. We will post the new version on this page and update the date at the top. Continued use of the app after a change means you accept the updated policy.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2>11. Contact us</h2>
+      <p>DHA Studio — FaceBot<br/>
+      Email: <a class="inline" href="mailto:contact@dhastudio.xyz">contact@dhastudio.xyz</a></p>
     </div>
 
   </div>
 
   <footer>
-    <p id="footer-copy"></p>
+    <p>© 2026 FaceBot. All rights reserved.</p>
     <div class="footer-links">
       <a href="privacy-policy.html">Privacy Policy</a>
       <a href="terms.html">Terms of Use</a>
-      <a id="footer-email" href="#">Contact</a>
+      <a href="mailto:contact@dhastudio.xyz">Contact</a>
     </div>
   </footer>
-
-  <script>
-    // Apply colors
-    const r = document.documentElement.style;
-    r.setProperty('--accent',  APP_CONFIG.colors.accent);
-    r.setProperty('--bg',      APP_CONFIG.colors.bg);
-    r.setProperty('--surface', APP_CONFIG.colors.surface);
-
-    // Fill content
-    document.title = `Privacy Policy — ${APP_CONFIG.appName}`;
-    document.getElementById('nav-appname').textContent   = APP_CONFIG.appName;
-    document.getElementById('pp-appname').textContent    = APP_CONFIG.appName;
-    document.getElementById('footer-copy').textContent   = `© ${APP_CONFIG.year} ${APP_CONFIG.appName}. All rights reserved.`;
-    document.getElementById('footer-email').href         = `mailto:${APP_CONFIG.contactEmail}`;
-    document.getElementById('contact-link').href         = `mailto:${APP_CONFIG.contactEmail}`;
-    document.getElementById('contact-link').textContent  = APP_CONFIG.contactEmail;
-    document.getElementById('contact-link-2').href       = `mailto:${APP_CONFIG.contactEmail}`;
-    document.getElementById('contact-link-2').textContent = APP_CONFIG.contactEmail;
-    document.getElementById('doc-meta').textContent      = `Last updated: January 1, ${APP_CONFIG.year}`;
-
-    // Icon
-    if (APP_CONFIG.iconFile) {
-      const img = document.getElementById('nav-icon');
-      img.src = APP_CONFIG.iconFile;
-      img.style.display = 'block';
-    }
-  </script>
 
 </body>
 </html>
